@@ -1,0 +1,51 @@
+@bigWidth: 1400px;
+@mediaWidth: 1200px;
+@mdMediaWidth: 800px;
+@mdWidth: 992px;
+@smWidth: 768px;
+@cutomWidth: 550px;
+@cutomHeight: 550px;
+@customMobil: 460px;
+
+@durationFast: 0.2s;
+@durationMedium: 0.6s;
+@durationStandert: 0.8s;
+@durationSlow: 1s;
+@durationVerySlow: 2s;
+
+.paddingStyle {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.addAnimation {
+  transition: all @durationFast ease-out;
+  -webkit-transition: all @durationFast ease-out;
+}
+
+.addAnimationFast {
+  transition: all @durationFast ease-out;
+  -webkit-transition: all @durationFast ease-out;
+}
+
+.addAnimationMedium {
+  transition: all @durationMedium ease-out;
+  -webkit-transition: all @durationMedium ease-out;
+}
+
+.addAnimationSlow {
+  transition: all @durationSlow ease-out;
+  -webkit-transition: all @durationSlow ease-out;
+}
+
+.addAnimationVerySlow {
+  transition: all @durationVerySlow ease-out;
+  -webkit-transition: all @durationVerySlow ease-out;
+}
+
+.css3anibugfix {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translatez(0);
+  transform: translatez(0);
+}

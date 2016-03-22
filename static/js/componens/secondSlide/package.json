@@ -1,0 +1,6 @@
+{
+  "name": "SecondSlide",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./secondSlide.js"
+}
