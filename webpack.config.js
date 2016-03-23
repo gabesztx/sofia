@@ -26,10 +26,16 @@ module.exports = {
         //loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
       },
       {
-        test: /\.less$/,
-        loader: 'style!css!less?modules&localIdentName=[name]_[local]_[hash:base64:3]'
-        //loader: ExtractTextPlugin.extract('style-loader', 'css-loader!less-loader')
+        test: /\.scss/,
+        loader: 'style!css!sass?modules&localIdentName=[name]_[local]_[hash:base64:3]'
+        //loader: ExtractTextPlugin.extract('style-loader', 'css-loader!scss-loader')
       },
+ /*     {
+        test: /\.(sass|css)$/,
+        //loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
+        loader: 'style!css!sass?modules&localIdentName=[name]_[local]_[hash:base64:3]'
+
+      },*/
       {
         test: /\.jsx?$/,
         loader: "babel-loader",

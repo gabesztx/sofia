@@ -1,0 +1,63 @@
+@mixin backround() {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  left:-10%;
+  top:-10%;
+  background-size: cover;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
+.parallaxContent {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  .sceneContener {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    .layer {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      .layers1 {
+        @include backround();
+        background-image: url(../../../asset/1.png);
+
+      }
+      .layers2 {
+        @include backround();
+        background-image: url(../../../asset/2.png);
+      }
+      .layers3 {
+        @include backround();
+        background-image: url(../../../asset/3.png);
+      }
+
+      .layers3 {
+        @include backround();
+        background-image: url(../../../asset/3.png);
+
+      }
+      .layers4 {
+        @include backround();
+        background-image: url(../../../asset/4.png);
+
+      }
+      .layers5 {
+        @include backround();
+        background-image: url(../../../asset/5.png);
+
+      }
+      .layers6 {
+        @include backround();
+        background-image: url(../../../asset/6.png);
+
+      }
+
+    }
+  }
+}

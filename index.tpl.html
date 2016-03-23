@@ -9,11 +9,28 @@
     <!--<meta name="viewport" content="width=device-width, user-scalable=no"/>-->
     <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">-->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/js/core/pageContent.css" rel="stylesheet">
 </head>
 <body>
-
+<div class="pageContent">
+    <div class="preloaderContent">
+        <div class="preloader">
+            <div class="preloader-cell">
+                <div class="preloaderTitle">Sofia Web</div>
+                <div class="cssload-loader">
+                    <div class="cssload-loader-inner"></div>
+                </div>
+                <div class="preloaderText">page loading...</div>
+            </div>
+        </div>
+    </div>
+    <div ng-view></div>
+</div>
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="node_modules/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" src="bower_components/PxLoader/dist/pxloader-images.min.js"></script>
 <script type="text/javascript" src="bower_components/parallax/deploy/parallax.js"></script>
-<!--<script type="text/javascript" src="node_modules/gsap/src/minified/TweenMax.min.js"></script>-->
 </body>
 </html>
