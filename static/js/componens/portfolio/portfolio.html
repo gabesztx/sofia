@@ -1,3 +1,88 @@
-<div class="portfolioContent">
-    <h1>portfolio content</h1>
+<div class="portfolioImgContent contenerDownAnim" ng-show="isPortfolio">
+    <div class="category" ng-if="item === 1">
+        <div class="picContent">
+            <img src="static/storage/portfolio/pic1/1.jpg">
+            <img src="static/storage/portfolio/pic1/2.jpg">
+            <img src="static/storage/portfolio/pic1/3.jpg">
+            <img src="static/storage/portfolio/pic1/4.jpg">
+        </div>
+        <div class="closeBtn">
+            <i class="fa fa-times" ng-click="portfolioClose()"></i>
+        </div>
+        <div class="textContent">
+            <div class="textAdress">Pigs</div>
+            <div class="textDesc">Lorem Ipsum is when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="category" ng-if="item === 2">
+        <div class="picContent">
+            <img src="static/storage/portfolio/pic2/1.jpg">
+            <img src="static/storage/portfolio/pic2/2.jpg">
+            <img src="static/storage/portfolio/pic2/3.jpg">
+            <img src="static/storage/portfolio/pic2/4.jpg">
+            <img src="static/storage/portfolio/pic2/5.jpg">
+            <img src="static/storage/portfolio/pic2/6.jpg">
+            <img src="static/storage/portfolio/pic2/7.jpg">
+        </div>
+        <div class="closeBtn">
+            <i class="fa fa-times" ng-click="portfolioClose()"></i>
+        </div>
+        <div class="textContent">
+            <div class="textAdress">Goats</div>
+            <div class="textDesc">Lorem Ipsum is when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged.
+            </div>
+        </div>
+    </div>
+    <div class="category" ng-if="item === 3">
+        <div class="picContent">
+            <img src="static/storage/portfolio/pic3/1.png">
+            <img src="static/storage/portfolio/pic3/2.jpg">
+            <img src="static/storage/portfolio/pic3/3.jpg">
+            <img src="static/storage/portfolio/pic3/4.jpg">
+        </div>
+        <div class="closeBtn">
+            <i class="fa fa-times" ng-click="portfolioClose()"></i>
+        </div>
+        <div class="textContent">
+            <div class="textAdress">Ferrets</div>
+            <div class="textDesc">Lorem Ipsum is when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged.
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="portfolio">
+    <div class="portfolioContent">
+        <h1>Portfolio</h1>
+        <div class="portfolioThumbContent">
+            <div class="portfolioThumbs" ng-click="picItems(1)">
+                <img class="grayscale" src="static/storage/portfolio/1.jpg">
+            </div>
+            <div class="portfolioThumbs" ng-click="picItems(2)">
+                <img class="grayscale" src="static/storage/portfolio/2.jpg">
+            </div>
+            <div class="portfolioThumbs" ng-click="picItems(3)">
+                <img class="grayscale" src="static/storage/portfolio/3.jpg">
+            </div>
+            <div class="portfolioThumbs" ng-click="picItems(1)">
+                <img class="grayscale" src="static/storage/portfolio/1.jpg">
+            </div>
+            <div class="portfolioThumbs" ng-click="picItems(2)">
+                <img class="grayscale" src="static/storage/portfolio/2.jpg">
+            </div>
+            <div class="portfolioThumbs" ng-click="picItems(3)">
+                <img class="grayscale" src="static/storage/portfolio/3.jpg">
+            </div>
+        </div>
+    </div>
 </div>
