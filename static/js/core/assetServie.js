@@ -26,6 +26,7 @@ class AssetService {
     const loader = new PxLoader();
     let pxImage = [];
     for (let i in this.assetObj['welcome']) {
+      //const imgUrl =  this.dropboxBaseUrl + '/static/storage/' + this.assetObj.welcome[i];
       const imgUrl = '/static/storage/' + this.assetObj.welcome[i];
       pxImage[i] = new PxLoaderImage(imgUrl);
       loader.add(pxImage[i]);
