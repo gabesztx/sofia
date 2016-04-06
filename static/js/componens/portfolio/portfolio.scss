@@ -1,4 +1,5 @@
 .portfolioImgContent {
+  font-family: Roboto;
   position: absolute;
   z-index: 10;
   width: 100%;
@@ -11,13 +12,13 @@
   .category {
     width: 100%;
     height: 100%;
-    background-color: rgba(255,255,255,1);
-    .closeBtn{
+    background-color: rgba(255, 255, 255, 1);
+    .closeBtn {
       position: absolute;
       font-size: 25px;
       right: 0;
       padding-right: 10px;
-      i{
+      i {
         cursor: pointer;
       }
     }
@@ -34,13 +35,17 @@
     .textContent {
       width: 100%;
       height: 25%;
+      margin-top: 10px;
       overflow: auto;
       .textAdress {
+        text-transform: uppercase;
         margin-left: 10px;
+        //font-weight: 500;
         font-size: 24px;
       }
       .textDesc {
         width: 90%;
+        font-weight: 300;
         margin-left: 10px;
         font-size: 15px;
       }
@@ -53,7 +58,18 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: #b5b5b5;
+
+  //background-color: #b5b5b5;
+  .portfolioBg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../../storage/welcome/1.png);
+  }
   .portfolioContent {
     margin: auto;
     width: 100%;
@@ -63,8 +79,10 @@
     transition: all 0.5s;
 
     h1 {
-      color: whitesmoke;
-      font-size: 40px;
+
+      font-family: Roboto;
+      color: black;
+
     }
     .portfolioThumbContent {
       overflow: auto;
@@ -97,23 +115,22 @@
   }
 }
 
-
 .contenerDownAnim.ng-hide-add, .contenerDownAnim.ng-hide-remove {
   display: block !important;
 }
 
 .contenerDownAnim.ng-hide-add {
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
 }
 
 .contenerDownAnim.ng-hide-add.ng-hide-add-active {
-    transform: translate3d(0,-100%,0);
+  transform: translate3d(0, -100%, 0);
 }
 
 .contenerDownAnim.ng-hide-remove {
-    transform: translate3d(0,-100%,0);
+  transform: translate3d(0, -100%, 0);
 }
 
 .contenerDownAnim.ng-hide-remove.ng-hide-remove-active {
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
 }
