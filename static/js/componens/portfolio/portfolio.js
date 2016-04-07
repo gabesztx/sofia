@@ -8,7 +8,8 @@ export default {
   controller: /* @ngInject */ function portfolioController($scope, $timeout) {
     //$scope.dropboxBaseUrl = '/u/27048617/sofia/static/storage/portfolio/';
     $scope.dropboxBaseUrl = 'static/storage/portfolio/';
-    const animClass = 'inactive';
+    const animClass = 'ontouchstart' in document.documentElement ? 'inactiveMobil' : 'inactive';
+
     $scope.portfolioClose = ()=> {
       $scope.isPortfolio = false;
       $timeout(()=> {

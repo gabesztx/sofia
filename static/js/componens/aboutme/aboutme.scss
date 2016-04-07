@@ -1,16 +1,16 @@
 @mixin backround() {
 }
-.pageMenuContent {
+
+.menuItem {
   z-index: 1;
-  position: fixed;
+  position: relative;
   width: 300px;
   height: 300px;
   border-radius: 150px;
-  left:50%;
-  margin-left: -150px;
+  margin: auto;
   background-color: whitesmoke;
-  -webkit-transform: translate3d(0,-300px,0) rotate(100deg);
-  transform: translate3d(0,-300px,0) rotate(100deg);
+  -webkit-transform: translate3d(0,-200px,0) scale(0);
+  transform: translate3d(0,-180px,0) scale(0);
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
   .menuTable {
@@ -46,7 +46,6 @@
         margin-top: 50px;
         img{
           width: 35%;
-
         }
       }
     }
@@ -54,11 +53,8 @@
   }
 }
 .menuActive{
-  -webkit-transform: translate3d(0,-110px,0) rotate(0deg);
-  transform: translate3d(0,-110px,0) rotate(0deg);
-
-  //-webkit-transition: all 1s ease-out;
-  //transition: all 1s ease-out;
+  -webkit-transform: translate3d(0,-110px,0) scale(1);
+  transform: translate3d(0,-110px,0) scale(1);
 }
 
 .parallaxContent {

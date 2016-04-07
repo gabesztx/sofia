@@ -1,4 +1,6 @@
 import welcomePage from './componens/welcome';
+import contactPage from './componens/contact'
+import aboutPage from './componens/aboutme'
 import preload from './componens/preload';
 import portfolioPage from './componens/portfolio';
 import assetService from './core/assetServie'
@@ -6,13 +8,10 @@ import assetService from './core/assetServie'
 angular.module('sofiaweb', ['ngRoute', 'ngAnimate'])
   .service('assetService', assetService)
   .component('welcomePage', welcomePage)
+  .component('contactPage', contactPage)
+  .component('aboutPage', aboutPage)
   .component('portfolioPage', portfolioPage)
   .component('preloadPage', preload)
-  /*.controller('AppController', ['$scope', function($scope) {
-    $scope.isPreloaderContent = false;
-    console.log('AppController');
-  }])*/
-  //.controller('preloaderController', preloaderController)
   .config(/* @ngInject */ ($routeProvider) => {
     $routeProvider
       .when('/welcome', {
@@ -24,6 +23,13 @@ angular.module('sofiaweb', ['ngRoute', 'ngAnimate'])
             return defer.promise;
           }
         }
+      })
+
+      .when('/aboutme', {
+        template: '<about-page></about-page>'
+      })
+      .when('/contact', {
+        template: '<contact-page></contact-page>'
       })
       .when('/portfolio', {
         template: '<portfolio-page></portfolio-page>'
