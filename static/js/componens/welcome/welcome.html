@@ -1,25 +1,6 @@
 <!--<preload-page></preload-page>-->
-<div class="pageMenuContent">
-    <div class="menuTable">
-        <div class="menuTable-cell">
-            <div class="menusContent">
-                <a ng-href="/#portfolio">
-                    <span class="menus">portfolio</span>
-                </a>
-                <a ng-href="/#contact">
-                    <span class="menus">kapcsolat</span>
-                </a>
-                <a ng-href="/#aboutme">
-                    <span class="menus">rolam</span>
-                </a>
-            </div>
-            <div class="logo">
-                <img ng-src="{{logourl}}">
-            </div>
-        </div>
-    </div>
-</div>
 <div class="parallaxContent">
+    <menu-content></menu-content>
     <div id="scene" class="sceneContener">
         <div class="layerItems" ng-repeat="item in layers track by $index">
             <div class="layer" data-depth="{{(($index+1)*16.5)/100}}">

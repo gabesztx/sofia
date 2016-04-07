@@ -1,4 +1,5 @@
 import welcomePage from './componens/welcome';
+import menuContent from './componens/menu';
 import contactPage from './componens/contact'
 import aboutPage from './componens/aboutme'
 import preload from './componens/preload';
@@ -8,6 +9,7 @@ import assetService from './core/assetServie'
 angular.module('sofiaweb', ['ngRoute', 'ngAnimate'])
   .service('assetService', assetService)
   .component('welcomePage', welcomePage)
+  .component('menuContent', menuContent)
   .component('contactPage', contactPage)
   .component('aboutPage', aboutPage)
   .component('portfolioPage', portfolioPage)
